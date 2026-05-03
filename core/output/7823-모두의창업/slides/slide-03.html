@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute;
+    width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:57.92px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:flex-start; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:57.92px;
+    width:936.08px;
+  }
+  .body-text {
+    width:936.08px;
+    font-weight:400; font-size:43.44px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .body-bold {
+    width:936.08px;
+    font-weight:700; font-size:43.44px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .cell-img {
+    width:924.91px; height:423.54px;
+    border-radius:27.15px;
+    object-fit:cover;
+    background:#D9D9D9;
+    flex-shrink:0;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🏛️</div>
+      <div class="headline-text">정부가 직접 진행해요</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="paragraph">
+      <p class="body-text"><span class="highlight">중소벤처기업부</span>가 추진하는 국가 창업 프로젝트예요. '국가창업시대 도약'을 위해 모두의 창업으로 모두의 성장을 만든다는 슬로건으로 출범했어요.</p>
+      <img class="cell-img" src="../../../c527a736-9fc1-4177-9baa-eeb24004e37e.webp" alt="">
+      <p class="body-text">지역·연령 제한 없이 누구나 도전할 수 있어서, 그동안 망설였던 분들에게 좋은 기회가 될 수 있어요.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

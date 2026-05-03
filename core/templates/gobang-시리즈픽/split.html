@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  /* ===== slide-type-split (596.8×746 × 1.81 = 1080×1350) ===== */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  /* content-group: 517.23×583 @ (39.79,63.66), gap 24 */
+  .content-group {
+    position:absolute;
+    width:936.08px; height:1055.23px;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .hl-text {
+    font-weight:800; font-size:57.61px; line-height:68.78px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .hl-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(239,68,82,0.3); border-radius:18.1px;
+    padding:0 14.48px; height:68.78px;
+    font-weight:800; font-size:57.61px;
+    letter-spacing:-0.02em; color:#1E2124; line-height:1;
+  }
+  /* img: 516×270 → 934×488.7, border-radius 15 */
+  .img-area {
+    width:934.08px; height:488.7px;
+    position:relative; overflow:hidden;
+    border-radius:27.15px; background:#D9D9D9; flex-shrink:0;
+  }
+  .img-area img {
+    width:100%; height:100%; object-fit:cover; object-position:center;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:18.1px;
+    width:936.08px;
+  }
+  .rank-badge {
+    min-width:81.45px; height:65.16px;
+    background:rgba(239,68,82,0.3); border-radius:18.1px;
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:0 16px;
+    font-weight:700; font-size:43.44px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .group-title {
+    width:936.08px;
+    font-weight:700; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .body {
+    width:936.08px;
+    font-weight:400; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    {{HEADLINE_HTML}}
+    <div class="img-area"><img src="{{IMAGE_URL}}" alt=""></div>
+    {{GROUPS_HTML}}
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

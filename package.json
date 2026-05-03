@@ -1,0 +1,15 @@
+{
+  "name": "insta-cardnews",
+  "version": "1.0.0",
+  "description": "URL → 인스타 카드뉴스 PNG 자동 생성",
+  "scripts": {
+    "start": "node runner/server.js",
+    "extract": "node core/extract.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^4.22.1",
+    "multer": "^1.4.5-lts.1",
+    "puppeteer": "^24.0.0"
+  }
+}

@@ -1,0 +1,194 @@
+/* slide-type-text-notitle */
+
+position: relative;
+width: 596.8px;
+height: 746px;
+
+background: #F8FAFD;
+
+
+/* content-group */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 31.83px;
+
+position: absolute;
+width: 517px;
+height: 516px;
+left: 39.6px;
+top: 48px;
+
+
+
+/* paragraph */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 35px;
+
+width: 517px;
+height: 247px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* body-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 23.87px;
+
+width: 517px;
+height: 247px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 오늘은 대표적인 1인가구 자취 유형 3가지 : 원룸·쉐어하우스·고시원에 대해 알아봤는데요.  현재 고방에선 원룸·쉐어하우스·고시원을 포함한 다양한 주거 유형을 한 번에 확인할 수 있어요. 만약, 기존의 정형화된 선택지에서 벗어나 나의 생활 패턴에 맞는 주거 공간을 선택하고 싶다면 고방에서 새로운 주거 유형을 찾아 보세요! */
+
+width: 517.23px;
+height: 247px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* img */
+
+width: 516px;
+height: 270px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 2100 */
+
+position: absolute;
+width: 516px;
+height: 270px;
+left: 0px;
+top: 278.83px;
+
+background: #D9D9D9;
+border-radius: 15px;
+
+
+/* 건대입구역 더포티엄 1 */
+
+position: absolute;
+width: 523px;
+height: 454px;
+left: calc(50% - 523px/2 - 1.41px);
+top: 156.34px;
+
+background: url(건대입구역 더포티엄.png);
+
+
+/* footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 11.94px;
+
+position: absolute;
+width: 517.23px;
+height: 33.93px;
+left: calc(50% - 517.23px/2 + 0px);
+bottom: 36.8px;
+
+
+
+/* divider */
+
+width: 517.23px;
+height: 0.99px;
+
+background: #DAE2ED;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text-group */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 239.71px;
+
+width: 517.23px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 1인 NEWS */
+
+width: 80px;
+height: 21px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+
+color: #BAC5D4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

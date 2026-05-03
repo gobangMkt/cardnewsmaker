@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    width:597px; height:746px; overflow:hidden; word-break:keep-all;
+    background:#f8fafd; position:relative;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  }
+  .content { position:absolute; top:64px; left:40px; right:40px; display:flex; flex-direction:column; gap:20px; }
+  .headline { display:flex; align-items:center; gap:8px; }
+  .icon { font-size:32px; }
+  .hl { font-size:32px; font-weight:800; color:#1e2124; letter-spacing:-0.64px; }
+  .hl-badge { background:rgba(239,68,82,0.3); border-radius:10px; padding:2px 10px; }
+  .img-area {
+    width:100%; height:248px; border-radius:14px; overflow:hidden;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5986 50%, #1a3050 100%);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+  }
+  .img-date { font-size:52px; font-weight:800; color:white; letter-spacing:-1px; }
+  .img-label { font-size:26px; font-weight:600; color:rgba(255,255,255,0.75); letter-spacing:-0.52px; }
+  .img-sub { font-size:22px; font-weight:400; color:rgba(255,255,255,0.55); letter-spacing:-0.44px; }
+  .group { display:flex; flex-direction:column; gap:10px; }
+  .rank-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(239,68,82,0.3); border-radius:10px;
+    width:45px; height:36px; font-size:22px; font-weight:700; color:#ef4452; flex-shrink:0;
+  }
+  .group-title { font-size:24px; font-weight:700; color:#1e2124; letter-spacing:-0.48px; }
+  ul { list-style:disc; padding-left:28px; display:flex; flex-direction:column; gap:2px; }
+  ul li { font-size:24px; font-weight:400; color:#1e2124; letter-spacing:-0.48px; line-height:1.5; }
+  .footer { position:absolute; bottom:0; left:40px; right:40px; height:56px; display:flex; align-items:center; border-top:1px solid #dae2ed; }
+  .footer-text { font-size:21px; font-weight:500; color:#1e2124; letter-spacing:-0.42px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content">
+    <div class="headline">
+      <span class="icon">🔥</span>
+      <div class="hl">신청 기간 &amp;&nbsp;<span class="hl-badge">방법</span></div>
+    </div>
+    <div class="img-area">
+      <div class="img-date">~ 5월 29일</div>
+      <div class="img-label">신청 마감</div>
+      <div class="img-sub">3월 30일 ~ 5월 29일</div>
+    </div>
+    <div class="group">
+      <div class="rank-badge">1위</div>
+      <div class="group-title">신청 방법</div>
+      <ul>
+        <li>온라인: 복지로 홈페이지</li>
+        <li>오프라인: 주민센터 방문</li>
+        <li>준비물: 임대차계약서, 소득 증빙, 신분증</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span class="footer-text">시리즈픽</span></div>
+</div>
+</body>
+</html>

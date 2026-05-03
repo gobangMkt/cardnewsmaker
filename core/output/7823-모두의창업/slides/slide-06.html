@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:flex-start; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:63.35px;
+    width:936.08px;
+  }
+  .body-text {
+    width:936.08px;
+    font-weight:400; font-size:43.44px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .body-bold {
+    width:936.08px;
+    font-weight:700; font-size:43.44px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .callout {
+    width:936.08px;
+    display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+    padding:43.21px 43.21px 46.81px; gap:14.41px;
+    background:#E6F5EC; border-radius:21.6px;
+  }
+  .callout-title {
+    display:flex; flex-direction:row; align-items:center; gap:14.41px; width:100%;
+  }
+  .callout-check {
+    width:50.41px; height:50.41px; flex-shrink:0;
+    background:#29BA66; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    color:#FFFFFF; font-size:28px; font-weight:700;
+  }
+  .callout-title-text {
+    font-weight:700; font-size:38.71px; line-height:160%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .callout-body {
+    width:100%; padding-left:10.8px;
+    font-weight:400; font-size:39.61px; line-height:160%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🧑‍🏫</div>
+      <div class="headline-text">단계별로 함께해요</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="paragraph">
+      <p class="body-text">선발 후 '끝'이 아니에요. <span class="highlight">검증 → 제작 → 성장</span> 단계별로 전문가 <span class="highlight">1:1 맞춤 멘토링</span>이 이어져요.</p>
+      <p class="body-text">창업은 결정할 게 너무 많아서, 누군가 옆에서 "지금은 이걸 먼저 하자"고 방향을 잡아주는 것만으로도 속도가 달라지거든요.</p>
+      <div class="callout">
+        <div class="callout-title">
+          <div class="callout-check">✓</div>
+          <div class="callout-title-text">단계별 흐름</div>
+        </div>
+        <div class="callout-body">도전신청서 제출 → 멘토 심사 및 선발<br>아이디어 검증 → 제작/사업화 → 성장 지원</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

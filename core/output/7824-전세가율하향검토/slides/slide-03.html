@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; gap:43.44px;
+  }
+  .headline { display:flex; align-items:flex-start; gap:14.48px; width:933.96px; }
+  .hl-icon { width:63.35px; height:63.35px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:50px; line-height:1; }
+  .headline-text { font-weight:800; font-size:57.61px; line-height:1.2; letter-spacing:-0.02em; color:#1E2124; }
+  .content-divider { width:100%; height:9.05px; background:#DAE2ED; }
+  .compare {
+    width:936.08px; display:flex; flex-direction:column; gap:0;
+    border-radius:21.6px; overflow:hidden; border:1.8px solid #DAE2ED;
+  }
+  .compare-row { display:flex; flex-direction:row; border-top:1.8px solid #DAE2ED; }
+  .compare-row:first-child { border-top:none; }
+  .compare-label {
+    width:200px; flex-shrink:0; padding:30px 24px;
+    background:#1E2124; font-weight:700; font-size:36px;
+    letter-spacing:-0.02em; color:#FFFFFF;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .compare-value {
+    flex:1; padding:30px 28px; background:#FFFFFF;
+    font-weight:400; font-size:39px; line-height:1.5;
+    letter-spacing:-0.02em; color:#1E2124;
+    display:flex; align-items:center;
+  }
+  .compare-value strong { color:#009AB5; font-weight:700; }
+  .compare-value.old { background:#F8FAFD; }
+  .stat-row {
+    width:936.08px; display:flex; gap:24px;
+  }
+  .stat-card {
+    flex:1; background:#FFFFFF; border:1.8px solid #DAE2ED;
+    border-radius:21.6px; padding:36px 28px;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .stat-num { font-weight:800; font-size:57.61px; line-height:1.1; letter-spacing:-0.03em; color:#009AB5; }
+  .stat-desc { font-weight:400; font-size:36px; line-height:1.4; letter-spacing:-0.02em; color:#6B7684; }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text { width:100%; display:flex; justify-content:space-between; align-items:center; }
+  .footer-label { font-weight:600; font-size:32.41px; color:#BAC5D4; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🧾</div>
+      <div class="headline-text">70% 하향, 무슨 뜻이에요?</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="compare">
+      <div class="compare-row">
+        <div class="compare-label">현행</div>
+        <div class="compare-value old">집값 대비 전세금 <strong>90% 이하</strong>면 보증 가입 가능</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">검토안</div>
+        <div class="compare-value">집값 대비 전세금 <strong>70% 이하</strong>만 보증 가입 가능</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-num">12만 건</div>
+        <div class="stat-desc">영향 받는 보증 건수 (전체의 74%)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">23.6조</div>
+        <div class="stat-desc">해당 구간 보증 금액 규모</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

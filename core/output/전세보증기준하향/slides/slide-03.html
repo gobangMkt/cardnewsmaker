@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    width:597px; height:746px; overflow:hidden; word-break:keep-all;
+    background:#f8fafd; position:relative;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  }
+  .content { position:absolute; top:64px; left:40px; right:40px; display:flex; flex-direction:column; gap:24px; }
+  .headline { display:flex; align-items:center; gap:8px; }
+  .icon { font-size:32px; }
+  .hl { font-size:32px; font-weight:800; color:#1e2124; letter-spacing:-0.64px; }
+  .hl-badge { background:rgba(239,68,82,0.3); border-radius:10px; padding:2px 10px; }
+  .group { display:flex; flex-direction:column; gap:10px; }
+  .rank-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(239,68,82,0.3); border-radius:10px;
+    width:45px; height:36px; font-size:22px; font-weight:700; color:#ef4452; flex-shrink:0;
+  }
+  .group-title { font-size:24px; font-weight:700; color:#1e2124; letter-spacing:-0.48px; line-height:1.5; }
+  ul { list-style:disc; padding-left:28px; display:flex; flex-direction:column; gap:2px; }
+  ul li { font-size:24px; font-weight:400; color:#1e2124; letter-spacing:-0.48px; line-height:1.5; }
+  .divider { height:1px; background:#dae2ed; }
+  .footer { position:absolute; bottom:0; left:40px; right:40px; height:56px; display:flex; align-items:center; border-top:1px solid #dae2ed; }
+  .footer-text { font-size:21px; font-weight:500; color:#1e2124; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content">
+    <div class="headline">
+      <span class="icon">🔥</span>
+      <div class="hl">비아파트&nbsp;<span class="hl-badge">영향이 크다</span></div>
+    </div>
+    <div class="group">
+      <div class="rank-badge">규모</div>
+      <div class="group-title">영향 받는 건수</div>
+      <ul>
+        <li>70~90% 초과 구간: 약 12만 건</li>
+        <li>전체 보증 건수의 약 74% 해당</li>
+        <li>해당 보증 금액: 약 23.6조 원 규모</li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+    <div class="group">
+      <div class="rank-badge">체감</div>
+      <div class="group-title">세입자가 느끼는 변화</div>
+      <ul>
+        <li>같은 집도 전세금이 조금만 높으면 보증 가입 불가</li>
+        <li>집주인의 전세금 인하 또는 월세 전환 요구 가능성</li>
+        <li>"보증 가입 여부"가 계약 필수 조건으로 자리잡을 것</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span class="footer-text">시리즈픽</span></div>
+</div>
+</body>
+</html>

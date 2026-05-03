@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group { position:absolute; width:936.08px; height:auto; left:72.02px; top:115.22px; display:flex; flex-direction:column; align-items:flex-start; gap:20px; }
+  .headline { display:flex; flex-direction:row; align-items:center; gap:14.48px; width:933.96px; }
+  .hl-icon { width:63.35px; height:63.35px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:50px; line-height:1; }
+  .hl-text { font-weight:800; font-size:57.61px; line-height:68.78px; letter-spacing:-0.02em; color:#1E2124; }
+  .hl-badge { display:inline-flex; align-items:center; justify-content:center; background:rgba(239,68,82,0.3); border-radius:18.1px; padding:0 14.48px; height:68.78px; font-weight:800; font-size:57.61px; letter-spacing:-0.02em; color:#1E2124; line-height:1; }
+  .paragraph { display:flex; flex-direction:column; align-items:flex-start; gap:18.1px; width:936.08px; }
+  .rank-badge { min-width:81.45px; height:65.16px; background:rgba(239,68,82,0.3); border-radius:18.1px; display:inline-flex; align-items:center; justify-content:center; padding:0 16px; font-weight:700; font-size:43.44px; letter-spacing:-0.02em; color:#1E2124; }
+  .group-title { width:936.08px; font-weight:700; font-size:43.44px; line-height:150%; letter-spacing:-0.02em; color:#1E2124; }
+  .body { width:936.08px; font-weight:400; font-size:43.44px; line-height:150%; letter-spacing:-0.02em; color:#1E2124; }
+  .footer { position:absolute; width:936.08px; height:61.41px; left:72.02px; bottom:66.61px; display:flex; flex-direction:column; align-items:flex-end; gap:21.61px; }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text { width:100%; display:flex; flex-direction:row; justify-content:space-between; align-items:center; }
+  .footer-label { font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">📌</div>
+      <div class="hl-text">왜</div>
+      <div class="hl-badge">서울 외곽</div>
+      <div class="hl-text">에 몰릴까?</div>
+    </div>
+    <div class="paragraph">
+      <div class="rank-badge">1위</div>
+      <div class="group-title">가격 진입 장벽</div>
+      <div class="body">강남 대비 상대적으로 낮은 단지 가격.</div>
+    </div>
+    <div class="paragraph">
+      <div class="rank-badge">2위</div>
+      <div class="group-title">교통 인프라 확충</div>
+      <div class="body">GTX·지하철 연장으로 접근성 개선.</div>
+    </div>
+    <div class="paragraph">
+      <div class="rank-badge">3위</div>
+      <div class="group-title">신축 공급 집중</div>
+      <div class="body">재개발 이외 신축 아파트가 외곽에 집중.</div>
+    </div>
+    <div class="paragraph">
+      <div class="rank-badge">4위</div>
+      <div class="group-title">대출 한도 맞추기</div>
+      <div class="body">LTV 기준 충족이 유리한 중저가 단지 선호.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

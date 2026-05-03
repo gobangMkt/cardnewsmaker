@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute;
+    width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .hl-text {
+    font-weight:800; font-size:57.61px; line-height:68.78px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .hl-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(0,154,181,0.2); border-radius:18.1px;
+    padding:0 14.48px; height:68.78px;
+    font-weight:800; font-size:57.61px;
+    letter-spacing:-0.02em; color:#1E2124; line-height:1;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .paragraphs {
+    display:flex; flex-direction:column; align-items:flex-start; gap:36.18px;
+    width:936.08px;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:18.1px;
+    width:936.08px;
+  }
+  .item-row {
+    display:flex; flex-direction:row; align-items:center; gap:18.1px;
+    width:936.08px;
+  }
+  .rank-badge {
+    min-width:81.45px; height:65.16px;
+    background:rgba(0,154,181,0.2); border-radius:18.1px;
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:0 16px; flex-shrink:0;
+    font-weight:700; font-size:43.44px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .group-title {
+    font-weight:700; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .body {
+    width:936.08px;
+    font-weight:400; font-size:39.61px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🎓</div>
+      <div class="hl-text">취준·공시생은 여기예요</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="paragraphs">
+      <div class="paragraph">
+        <div class="item-row">
+          <div class="rank-badge">학원가</div>
+          <div class="group-title">노량진·대방·상도</div>
+        </div>
+        <div class="body">1·9호선 학원가 밀집. 저가 식당 많아 생활비 절감 쉬워요. <span class="highlight">집중 환경 자연스럽게 형성</span>돼요.</div>
+      </div>
+      <div class="paragraph">
+        <div class="item-row">
+          <div class="rank-badge">고시촌</div>
+          <div class="group-title">신림·봉천</div>
+        </div>
+        <div class="body">서울대입구역 고시원 <span class="highlight">월 20~40만 원대</span>. 신안산선 개통으로 여의도 7분이라 직장 병행도 유리해요.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

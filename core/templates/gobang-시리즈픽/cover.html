@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  /* ===== slide-cover (596.8×746 × 1.81 = 1080×1350) ===== */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#FFFFFF;
+  }
+  /* background: 1092.97×762.62 @ left calc(50%-546.485+69.96), top -30.01 */
+  .bg-img {
+    position:absolute;
+    width:1978.27px; height:1380.34px;
+    left:calc(50% - 989.135px + 69.96px); top:-30.01px;
+    object-fit:cover;
+  }
+  /* gradient: 180deg dark→transparent rotated 180deg = bottom dark */
+  .gradient {
+    position:absolute; width:1080px; height:1350px; left:0; top:0;
+    background:linear-gradient(180deg, rgba(30,33,36,1) 8.3%, rgba(30,33,36,0) 65%);
+    transform:rotate(-180deg);
+  }
+  /* headline: 530.49×150 @ (26.52, 480.76) × 1.81 */
+  .headline {
+    position:absolute;
+    width:960.19px;
+    left:47.99px; top:870.58px;
+    display:flex; flex-direction:column; align-items:flex-start;
+    z-index:2;
+  }
+  .hl-line {
+    width:960.19px; height:135.75px;
+    font-weight:700; font-size:100.02px;
+    line-height:135%; letter-spacing:-0.05em; color:#FFFFFF;
+    -webkit-text-stroke:4px #000000; paint-order:stroke fill;
+    display:flex; align-items:center;
+  }
+  .hl-line .key { color:#00FFFF; }
+  /* speech bubble (optional): place anywhere with inline style top/right */
+  .bubble {
+    position:absolute;
+    background:#FFFFFF; border-radius:54.29px;
+    padding:28.91px 50.71px;
+    font-weight:700; font-size:43.44px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+    box-shadow:0 7.24px 18.1px rgba(0,0,0,0.12);
+    z-index:2;
+  }
+  .bubble::after {
+    content:''; position:absolute;
+    width:43.44px; height:43.44px;
+    background:#FFFFFF;
+    bottom:-12.67px; left:50%; transform:translateX(-50%) rotate(45deg);
+    box-shadow:5.43px 5.43px 9.05px rgba(0,0,0,0.05);
+  }
+  /* logo: 66.31×21 center, top 691.85 × 1.81 */
+  .logo-frame {
+    position:absolute;
+    width:150px; height:44px;
+    left:calc(50% - 75px); top:1262px;
+    display:flex; align-items:center; justify-content:center;
+    z-index:3;
+  }
+  .logo-img { height:36px; width:auto; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <img class="bg-img" src="{{BG_IMAGE_URL}}" alt="">
+  <div class="gradient"></div>
+  <!-- 선택: 말풍선. 사용 시 style로 top/left/right 직접 지정 -->
+  <!-- <div class="bubble" style="top:120px; right:80px;">예시...</div> -->
+  <div class="headline">
+    <div class="hl-line">{{LINE1}}</div>
+    <div class="hl-line"><span class="key">{{LINE2}}</span></div>
+  </div>
+  <div class="logo-frame">
+    <img class="logo-img" src="../피그마 ref/logo.png" alt="고방">
+  </div>
+</div>
+</body>
+</html>

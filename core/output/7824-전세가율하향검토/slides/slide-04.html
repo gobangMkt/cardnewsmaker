@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; gap:43.44px;
+  }
+  .headline { display:flex; align-items:flex-start; gap:14.48px; width:933.96px; }
+  .hl-icon { width:63.35px; height:63.35px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:50px; line-height:1; }
+  .headline-text { font-weight:800; font-size:57.61px; line-height:1.2; letter-spacing:-0.02em; color:#1E2124; }
+  .content-divider { width:100%; height:9.05px; background:#DAE2ED; }
+  .body-text {
+    width:936.08px; font-weight:400; font-size:43.44px; line-height:130%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .info-list { display:flex; flex-direction:column; gap:21.6px; }
+  .info-item {
+    display:flex; align-items:flex-start; gap:18px;
+    padding:28px 28px; background:#FFFFFF; border:1.8px solid #DAE2ED;
+    border-radius:21.6px;
+  }
+  .info-dot {
+    width:14px; height:14px; border-radius:50%;
+    background:#009AB5; flex-shrink:0; margin-top:18px;
+  }
+  .info-text {
+    font-weight:400; font-size:39px; line-height:1.5;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .info-text strong { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text { width:100%; display:flex; justify-content:space-between; align-items:center; }
+  .footer-label { font-weight:600; font-size:32.41px; color:#BAC5D4; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🏘️</div>
+      <div class="headline-text">빌라 전세에 더 큰 영향</div>
+    </div>
+    <div class="content-divider"></div>
+    <p class="body-text">아파트는 시세가 명확해서 전세가율이 70% 아래인 경우가 많아요. 반면 <span class="highlight">빌라·다세대는 구조적으로 전세가율이 높게 형성</span>돼 있어요.</p>
+    <div class="info-list">
+      <div class="info-item">
+        <div class="info-dot"></div>
+        <div class="info-text">빌라는 매매 시세가 낮고 전세가와 차이가 크지 않아 <strong>전세가율 70~90% 구간이 일반적</strong></div>
+      </div>
+      <div class="info-item">
+        <div class="info-dot"></div>
+        <div class="info-text">기준이 바뀌면 지금 살던 집에서 <strong>보증 가입 자체가 불가</strong>해지는 경우 발생</div>
+      </div>
+      <div class="info-item">
+        <div class="info-dot"></div>
+        <div class="info-text">서울·수도권 저가 빌라 임차인 중 <strong>사회초년생·청년층 비중이 높아</strong> 실질 피해 집중 우려</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

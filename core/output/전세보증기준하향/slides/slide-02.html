@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    width:597px; height:746px; overflow:hidden; word-break:keep-all;
+    background:#f8fafd; position:relative;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  }
+  .content { position:absolute; top:64px; left:40px; right:40px; bottom:72px; display:flex; flex-direction:column; gap:20px; }
+  .headline { display:flex; align-items:center; gap:10px; }
+  .icon-box { width:36px; height:36px; background:#e8edf2; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
+  .headline-text { font-size:32px; font-weight:800; color:#1e2124; letter-spacing:-0.64px; }
+  .body-text { font-size:24px; font-weight:400; color:#1e2124; line-height:1.65; letter-spacing:-0.48px; }
+  .body-text em { font-style:normal; color:#ef4452; font-weight:700; }
+  .num-list { display:flex; flex-direction:column; gap:10px; }
+  .num-item { font-size:24px; line-height:1.6; letter-spacing:-0.48px; color:#1e2124; }
+  .num-item b { font-weight:700; }
+  .callout { background:#e8f5ee; border-radius:14px; padding:20px 22px; margin-top:auto; }
+  .callout-title { display:flex; align-items:center; gap:8px; font-size:24px; font-weight:700; color:#1e2124; letter-spacing:-0.48px; margin-bottom:8px; }
+  .callout-check { width:28px; height:28px; background:#34a853; border-radius:6px; display:flex; align-items:center; justify-content:center; color:white; font-size:16px; flex-shrink:0; }
+  .callout-body { font-size:22px; font-weight:400; color:#1e2124; line-height:1.5; letter-spacing:-0.44px; padding-left:36px; }
+  .footer { position:absolute; bottom:0; left:40px; right:40px; height:56px; display:flex; align-items:center; border-top:1px solid #dae2ed; }
+  .footer-text { font-size:21px; font-weight:500; color:#1e2124; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content">
+    <div class="headline">
+      <div class="icon-box">📋</div>
+      <div class="headline-text">무엇이 바뀌나요?</div>
+    </div>
+    <p class="body-text">
+      전세보증금 반환보증 가입 기준인 담보인정비율이 <em>현행 90%에서 70%로</em> 낮아지는 방안이 검토되고 있어요.
+    </p>
+    <p class="body-text">
+      담보인정비율이란 <em>"전세금+선순위채권이 집값에서 차지하는 비중"</em>으로, 이 비율이 높을수록 전세 위험도가 높다는 의미예요.
+    </p>
+    <div class="num-list">
+      <div class="num-item"><b>현행 기준:&nbsp;</b>담보인정비율 90% 이하 가입 가능</div>
+      <div class="num-item"><b>검토안:&nbsp;</b>상한을 70%로 낮추는 방향</div>
+      <div class="num-item"><b>시행 예정:&nbsp;</b>2026년 단계적 조정</div>
+    </div>
+    <div class="callout">
+      <div class="callout-title">
+        <div class="callout-check">✓</div>
+        전세가율 70% 하향 검토
+      </div>
+      <div class="callout-body">보증사고 감소 및 전세대출을 통한 가격 상승 압력 완화가 목적이에요.</div>
+    </div>
+  </div>
+  <div class="footer"><span class="footer-text">시리즈픽</span></div>
+</div>
+</body>
+</html>

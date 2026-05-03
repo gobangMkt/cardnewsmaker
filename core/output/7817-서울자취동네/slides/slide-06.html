@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute;
+    width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .hl-text {
+    font-weight:800; font-size:57.61px; line-height:68.78px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .hl-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(0,154,181,0.2); border-radius:18.1px;
+    padding:0 14.48px; height:68.78px;
+    font-weight:800; font-size:57.61px;
+    letter-spacing:-0.02em; color:#1E2124; line-height:1;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .paragraphs {
+    display:flex; flex-direction:column; align-items:flex-start; gap:36.18px;
+    width:936.08px;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:14.48px;
+    width:936.08px;
+  }
+  .item-row {
+    display:flex; flex-direction:row; align-items:center; gap:18.1px;
+    width:936.08px;
+  }
+  .rank-badge {
+    min-width:81.45px; height:65.16px;
+    background:rgba(0,154,181,0.2); border-radius:18.1px;
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:0 16px; flex-shrink:0;
+    font-weight:700; font-size:43.44px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .group-title {
+    font-weight:700; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .bullets {
+    display:flex; flex-direction:column; gap:9.05px;
+    width:936.08px; padding-left:18.1px;
+  }
+  .bullet-item {
+    position:relative; padding-left:32.41px;
+    font-weight:400; font-size:36.18px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .bullet-item::before {
+    content:'•'; position:absolute;
+    left:0; top:0; font-weight:700; color:#1E2124;
+  }
+  .bullet-item b { font-weight:700; }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🌿</div>
+      <div class="hl-text">조용한 동네 원하면</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="paragraphs">
+      <div class="paragraph">
+        <div class="item-row">
+          <div class="rank-badge">동북권</div>
+          <div class="group-title">성북·노원·도봉</div>
+        </div>
+        <div class="bullets">
+          <div class="bullet-item"><b>안암동:</b> 고려대 주변, 합리적 월세</div>
+          <div class="bullet-item"><b>공릉동:</b> 4·7호선, 대학가 인프라</div>
+          <div class="bullet-item"><b>창동:</b> 1·4호선 환승, 개발 중</div>
+        </div>
+      </div>
+      <div class="paragraph">
+        <div class="item-row">
+          <div class="rank-badge">서북권</div>
+          <div class="group-title">은평구 주택가 라인</div>
+        </div>
+        <div class="bullets">
+          <div class="bullet-item"><b>응암동:</b> 6호선, 조용한 주택가</div>
+          <div class="bullet-item"><b>성산동:</b> 2·6호선, 홍대 생활권</div>
+          <div class="bullet-item"><b>불광동:</b> 3·6호선 환승, 편의시설 풍부</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

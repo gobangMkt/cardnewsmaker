@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:flex-start; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px; background:#DAE2ED; flex-shrink:0;
+  }
+  .steps {
+    width:936.08px;
+    display:flex; flex-direction:column; gap:0;
+  }
+  .step-row {
+    display:flex; flex-direction:row; align-items:stretch; gap:0;
+  }
+  .step-left {
+    width:80px; flex-shrink:0;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .step-num {
+    width:68px; height:68px;
+    background:#009AB5; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800; font-size:36px; color:#FFFFFF; flex-shrink:0;
+  }
+  .step-line {
+    width:4px; flex:1; background:#DAE2ED; margin:4px 0;
+  }
+  .step-row:last-child .step-line { display:none; }
+  .step-content {
+    flex:1; padding:6px 0 40px 24px;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .step-title {
+    font-weight:700; font-size:43.44px; line-height:1.3;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .step-desc {
+    font-weight:400; font-size:37px; line-height:1.5;
+    letter-spacing:-0.02em; color:#6B7684;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">📋</div>
+      <div class="headline-text">받는 법 5단계</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-left">
+          <div class="step-num">1</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">티머니 카드&페이 가입</div>
+          <div class="step-desc">앱 설치 후 회원가입해요</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-left">
+          <div class="step-num">2</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">카드 번호 등록</div>
+          <div class="step-desc">실물카드 번호를 앱에 등록해야 마일리지 지급돼요</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-left">
+          <div class="step-num">3</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">4월 내 30일권 충전</div>
+          <div class="step-desc"><span class="highlight">4월 30일</span> 전에 충전 완료해야 해요</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-left">
+          <div class="step-num">4</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">실제 대중교통 이용</div>
+          <div class="step-desc">충전만 하면 안 되고 실제로 써야 해요</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-left">
+          <div class="step-num">5</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">6월에 마일리지 지급</div>
+          <div class="step-desc">티머니 마일리지로 <span class="highlight">자동 적립</span>돼요</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>시리즈픽 카드뉴스 컨트롤 패널</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;
+    background:#F8FAFD; color:#1E2124;
+    letter-spacing:-0.02em; padding:40px 24px 80px;
+  }
+  .wrap { max-width:880px; margin:0 auto; }
+  h1 { font-size:34px; font-weight:800; margin-bottom:8px; }
+  .sub { color:#6B7684; margin-bottom:32px; }
+  .card {
+    background:#fff; border:1px solid #DAE2ED; border-radius:16px;
+    padding:24px; margin-bottom:24px;
+  }
+  .card h2 { font-size:20px; font-weight:700; margin-bottom:16px; }
+  label { display:block; font-weight:600; margin-bottom:8px; font-size:14px; }
+  input[type="text"], input[type="url"] {
+    width:100%; padding:12px 16px; border:1px solid #DAE2ED;
+    border-radius:10px; font-size:15px; font-family:inherit;
+  }
+  input[type="text"]:focus, input[type="url"]:focus { outline:none; border-color:#009AB5; }
+  .dropzone {
+    border:2px dashed #BAC5D4; border-radius:12px; padding:32px;
+    text-align:center; color:#6B7684; cursor:pointer; transition:0.15s;
+    margin-top:8px;
+  }
+  .dropzone.active { border-color:#009AB5; background:#E6F7FA; }
+  .dropzone input { display:none; }
+  .file-list { margin-top:12px; display:flex; flex-direction:column; gap:6px; }
+  .file-item {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:8px 12px; background:#F0F4F8; border-radius:8px; font-size:14px;
+  }
+  .file-item button { background:none; border:none; color:#EF4452; cursor:pointer; font-size:16px; }
+  button.primary {
+    background:#009AB5; color:#fff; border:none; border-radius:10px;
+    padding:12px 24px; font-size:15px; font-weight:700; cursor:pointer;
+    margin-top:16px; font-family:inherit;
+  }
+  button.primary:hover { background:#0088A0; }
+  button.ghost {
+    background:#fff; color:#1E2124; border:1px solid #DAE2ED;
+    border-radius:8px; padding:6px 14px; font-size:13px; cursor:pointer;
+    font-family:inherit;
+  }
+  button.ghost:hover { border-color:#009AB5; color:#009AB5; }
+  .progress-bar {
+    width:100%; height:8px; background:#E5EBF2; border-radius:4px;
+    overflow:hidden; position:relative;
+  }
+  .progress-fill {
+    width:30%; height:100%; background:#009AB5;
+    border-radius:4px;
+    animation: progress-slide 1.6s ease-in-out infinite;
+  }
+  .progress-fill.done {
+    width:100% !important; animation:none; background:#29BA66;
+  }
+  @keyframes progress-slide {
+    0% { margin-left:-30%; }
+    100% { margin-left:100%; }
+  }
+  .copy-btn { float:right; }
+  .outputs { display:flex; flex-direction:column; gap:12px; }
+  .output-item {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 16px; border:1px solid #DAE2ED; border-radius:10px;
+  }
+  .output-meta { font-size:13px; color:#6B7684; }
+  .output-actions { display:flex; gap:8px; }
+  .gallery {
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));
+    gap:14px; margin-top:14px;
+  }
+  .g-item { display:flex; flex-direction:column; gap:6px; }
+  .g-item img {
+    width:100%; aspect-ratio:1080/1350; object-fit:cover;
+    border-radius:8px; border:1px solid #DAE2ED;
+  }
+  .g-dl {
+    display:block; text-align:center; font-size:12px; color:#6B7684;
+    text-decoration:none; padding:6px; border:1px solid #DAE2ED; border-radius:6px;
+  }
+  .g-dl:hover { color:#009AB5; border-color:#009AB5; }
+  .badge {
+    display:inline-block; padding:2px 8px; border-radius:6px;
+    background:rgba(0,154,181,0.15); color:#007088; font-size:12px; font-weight:600;
+  }
+  .toast {
+    position:fixed; bottom:32px; left:50%; transform:translateX(-50%);
+    background:#1E2124; color:#fff; padding:12px 20px; border-radius:8px;
+    font-size:14px; opacity:0; transition:0.2s;
+  }
+  .toast.show { opacity:1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>시리즈픽 카드뉴스 컨트롤 패널</h1>
+  <p class="sub">URL과 이미지를 입력하면 Claude에게 줄 프롬프트를 만들어줘요.</p>
+
+  <div class="card">
+    <h2>1. 입력</h2>
+    <label for="url">콘텐츠 URL</label>
+    <input id="url" type="url" placeholder="https://gobang.kr/contents/7825">
+
+    <label style="margin-top:16px;">이미지 (선택, 여러 장 가능)</label>
+    <div id="dropzone" class="dropzone">
+      파일을 드래그하거나 클릭해서 선택<br>
+      <small>커버·본문에 사용할 이미지를 업로드해요</small>
+      <input id="files" type="file" multiple accept="image/*">
+    </div>
+    <div id="filelist" class="file-list"></div>
+
+    <button class="primary" id="generate">카드뉴스 만들기</button>
+
+    <div id="progress-wrap" style="display:none; margin-top:20px;">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="sub" id="progress-text" style="margin-top:8px; margin-bottom:0;">Claude 작업 중…</p>
+      <pre id="log-box" style="display:none; margin-top:12px; padding:12px 16px; background:#1E2124; color:#c8d0db;
+        font-size:12px; line-height:1.6; border-radius:10px; max-height:260px; overflow-y:auto;
+        white-space:pre-wrap; word-break:break-all; font-family:monospace;"></pre>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. 생성된 카드뉴스 <button class="ghost copy-btn" id="refresh">새로고침</button></h2>
+    <p class="sub" style="margin-top:-8px; margin-bottom:16px;">개별 PNG 다운로드 또는 전체를 ZIP으로 받을 수 있어요.</p>
+    <div class="outputs" id="outputs">불러오는 중…</div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const dropzone = document.getElementById('dropzone');
+  const fileInput = document.getElementById('files');
+  const fileList = document.getElementById('filelist');
+  let files = [];
+
+  function renderFiles() {
+    fileList.innerHTML = files.map((f, i) =>
+      `<div class="file-item"><span>${f.name} <small style="color:#6B7684">(${(f.size/1024).toFixed(0)}KB)</small></span><button data-i="${i}">×</button></div>`
+    ).join('');
+    fileList.querySelectorAll('button').forEach(b => {
+      b.onclick = () => { files.splice(+b.dataset.i, 1); renderFiles(); };
+    });
+  }
+
+  dropzone.onclick = (e) => { if (e.target.tagName !== 'INPUT') fileInput.click(); };
+  fileInput.onchange = (e) => { files = files.concat([...e.target.files]); renderFiles(); fileInput.value=''; };
+  ['dragenter','dragover'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.add('active'); }));
+  ['dragleave','drop'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.remove('active'); }));
+  dropzone.addEventListener('drop', e => {
+    files = files.concat([...e.dataTransfer.files].filter(f => f.type.startsWith('image/')));
+    renderFiles();
+  });
+
+  function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg; t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 1800);
+  }
+
+  document.getElementById('generate').onclick = async () => {
+    const url = document.getElementById('url').value.trim();
+    if (!url) return toast('URL을 입력해주세요');
+    const fd = new FormData();
+    fd.append('url', url);
+    files.forEach(f => fd.append('images', f));
+
+    const btn = document.getElementById('generate');
+    const wrap = document.getElementById('progress-wrap');
+    const fill = document.getElementById('progress-fill');
+    const txt = document.getElementById('progress-text');
+
+    const logBox = document.getElementById('log-box');
+    btn.disabled = true; btn.textContent = '생성 중…';
+    wrap.style.display = 'block';
+    fill.classList.remove('done');
+    txt.textContent = 'Claude가 작업 중이에요…';
+    logBox.style.display = 'none'; logBox.textContent = '';
+
+    try {
+      const r = await fetch('/api/generate', { method:'POST', body: fd });
+      const reader = r.body.getReader();
+      const decoder = new TextDecoder();
+      let buf = '', exitCode = null, doneSignal = null;
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream:true });
+        let idx;
+        while ((idx = buf.indexOf('\n')) >= 0) {
+          const line = buf.slice(0, idx); buf = buf.slice(idx + 1);
+          if (!line.trim()) continue;
+          try {
+            const evt = JSON.parse(line);
+            if (evt.event === 'log') {
+              logBox.style.display = 'block';
+              logBox.textContent += evt.line + '\n';
+              logBox.scrollTop = logBox.scrollHeight;
+            }
+            if (evt.event === 'done') { exitCode = evt.code; doneSignal = evt.signal; }
+          } catch {}
+        }
+      }
+      fill.classList.add('done');
+      if (exitCode === 0) { txt.textContent = '완료! 갤러리에서 확인하세요.'; toast('완료'); }
+      else { txt.textContent = `종료됨 (code=${exitCode}, signal=${doneSignal}). 로그를 확인해주세요.`; toast('오류'); }
+      loadOutputs();
+    } catch (e) {
+      txt.textContent = '오류: ' + e.message;
+      toast('오류');
+    } finally {
+      btn.disabled = false; btn.textContent = '카드뉴스 만들기';
+    }
+  };
+
+  async function loadOutputs() {
+    const r = await fetch('/api/outputs');
+    const data = await r.json();
+    const container = document.getElementById('outputs');
+    if (!data.length) { container.innerHTML = '<div class="sub">아직 출력된 폴더가 없어요</div>'; return; }
+    container.innerHTML = data.map(o => `
+      <div class="output-item">
+        <div>
+          <strong>${o.slug}</strong>
+          <span class="badge">PNG ${o.pngs.length}/${o.slides}</span>
+          <div class="output-meta">${new Date(o.mtime).toLocaleString('ko-KR')}</div>
+        </div>
+        <div class="output-actions">
+          <button class="ghost" data-action="view" data-slug="${o.slug}">미리보기</button>
+          <a class="ghost" href="/api/download/${o.slug}" download style="text-decoration:none;">전체 ZIP</a>
+          <button class="ghost" data-action="render" data-slug="${o.slug}">다시 렌더</button>
+        </div>
+      </div>
+      <div class="gallery" id="gallery-${o.slug}" style="display:none;">
+        ${o.pngs.map(p => `
+          <div class="g-item">
+            <a href="/output/${o.slug}/png/${p}" target="_blank"><img src="/output/${o.slug}/png/${p}" loading="lazy"></a>
+            <a class="g-dl" href="/output/${o.slug}/png/${p}" download="${p}">⬇ ${p}</a>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+    container.querySelectorAll('button').forEach(b => {
+      b.onclick = async () => {
+        const slug = b.dataset.slug;
+        if (b.dataset.action === 'view') {
+          const g = document.getElementById('gallery-' + slug);
+          g.style.display = g.style.display === 'none' ? 'grid' : 'none';
+        } else if (b.dataset.action === 'render') {
+          b.textContent = '렌더 중…'; b.disabled = true;
+          const r = await fetch('/api/render/' + slug, { method:'POST' });
+          const data = await r.json();
+          toast(data.code === 0 ? '렌더 완료' : '렌더 실패');
+          loadOutputs();
+        }
+      };
+    });
+  }
+  document.getElementById('refresh').onclick = loadOutputs;
+  loadOutputs();
+</script>
+</body>
+</html>

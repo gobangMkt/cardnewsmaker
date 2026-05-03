@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; gap:43.44px;
+  }
+  .headline { display:flex; align-items:flex-start; gap:14.48px; width:933.96px; }
+  .hl-icon { width:63.35px; height:63.35px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:50px; line-height:1; }
+  .headline-text { font-weight:800; font-size:57.61px; line-height:1.2; letter-spacing:-0.02em; color:#1E2124; }
+  .content-divider { width:100%; height:9.05px; background:#DAE2ED; }
+  .body-text {
+    width:936.08px; font-weight:400; font-size:43.44px; line-height:130%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .qa-list { display:flex; flex-direction:column; gap:21.6px; }
+  .qa-item { display:flex; flex-direction:column; gap:0; border-radius:21.6px; overflow:hidden; border:1.8px solid #DAE2ED; }
+  .qa-q {
+    padding:22px 28px; background:#1E2124;
+    font-weight:700; font-size:36px; line-height:1.4;
+    letter-spacing:-0.02em; color:#FFFFFF;
+  }
+  .qa-a {
+    padding:22px 28px; background:#FFFFFF;
+    font-weight:400; font-size:36px; line-height:1.5;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .qa-a strong { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text { width:100%; display:flex; justify-content:space-between; align-items:center; }
+  .footer-label { font-weight:600; font-size:32.41px; color:#BAC5D4; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🏠</div>
+      <div class="headline-text">집주인이라면?</div>
+    </div>
+    <div class="content-divider"></div>
+    <p class="body-text">보증 가입 가능 여부는 이제 <span class="highlight">세입자 모집의 핵심 조건</span>이 됐어요. 기준이 강화되면 집주인도 직접 영향을 받아요.</p>
+    <div class="qa-list">
+      <div class="qa-item">
+        <div class="qa-q">기존 세입자 보증금을 낮춰야 하나요?</div>
+        <div class="qa-a">의무는 아니지만, 세입자가 보증 가입을 원한다면 <strong>전세금 인하 협의</strong>가 필요할 수 있어요</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">세입자를 못 구하면 어떻게 되나요?</div>
+        <div class="qa-a">보증 불가 매물은 수요가 줄어 <strong>공실 위험 증가</strong>. 전세 대신 월세 전환을 고려하는 집주인도 늘 수 있어요</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

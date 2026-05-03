@@ -1,0 +1,753 @@
+/* slide-type-list */
+
+position: relative;
+width: 596.8px;
+height: 746px;
+
+background: #F8FAFD;
+
+
+/* Frame 133557 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 25px;
+
+position: absolute;
+width: 597px;
+height: 590px;
+left: 0px;
+top: 63.66px;
+
+
+
+/* Frame 133556 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 597px;
+height: 55px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* headline */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 516px;
+height: 45px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* list-item-03 */
+
+width: 35px;
+height: 35px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 12.72%;
+right: 12.73%;
+top: 6.82%;
+bottom: 6.82%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.72%;
+right: 12.73%;
+top: 6.82%;
+bottom: 6.82%;
+
+background: #EF4452;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.78%;
+right: 33.8%;
+top: 50.04%;
+bottom: 11.37%;
+
+background: #FF7978;
+
+
+/* 이번주 */
+
+width: 82px;
+height: 38px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 800;
+font-size: 31.8293px;
+line-height: 38px;
+/* identical to box height */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 133552 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 160px;
+height: 38px;
+
+background: rgba(0, 154, 181, 0.3);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* 가장 많이 본 */
+
+width: 148px;
+height: 38px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 800;
+font-size: 31.8293px;
+line-height: 38px;
+/* identical to box height */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 공고 */
+
+width: 55px;
+height: 38px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 800;
+font-size: 31.8293px;
+line-height: 38px;
+/* identical to box height */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* divider */
+
+width: 597px;
+height: 5px;
+
+background: #DAE2ED;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* content-group */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 517.23px;
+height: 510px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* paragraph */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 154px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 133553 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* list-item-02 */
+
+width: 34.15px;
+height: 27.32px;
+
+background: rgba(0, 154, 181, 0.3);
+border-radius: 7.58816px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 1위 */
+
+position: absolute;
+width: 392.48px;
+height: 27px;
+left: 0px;
+top: 0px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 18.2116px;
+line-height: 150%;
+/* or 27px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+
+/* body-text */
+
+width: 373px;
+height: 31px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* body-text-2 */
+
+width: 517.23px;
+height: 113px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* divider */
+
+display: none;
+width: 517.23px;
+height: 0.99px;
+
+background: #DAE2ED;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* paragraph */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 154px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 133553 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* list-item-02 */
+
+width: 34.15px;
+height: 27.32px;
+
+background: rgba(0, 154, 181, 0.3);
+border-radius: 7.58816px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 1위 */
+
+position: absolute;
+width: 392.48px;
+height: 27px;
+left: 0px;
+top: 0px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 18.2116px;
+line-height: 150%;
+/* or 27px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+
+/* body-text */
+
+width: 373px;
+height: 31px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* body-text-2 */
+
+width: 517.23px;
+height: 113px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* divider */
+
+display: none;
+width: 517.23px;
+height: 0.99px;
+
+background: #DAE2ED;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* paragraph */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 154px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 133553 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 517.23px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* list-item-02 */
+
+width: 34.15px;
+height: 27.32px;
+
+background: rgba(0, 154, 181, 0.3);
+border-radius: 7.58816px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 1위 */
+
+position: absolute;
+width: 392.48px;
+height: 27px;
+left: 0px;
+top: 0px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 18.2116px;
+line-height: 150%;
+/* or 27px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+
+/* body-text */
+
+width: 373px;
+height: 31px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* body-text-2 */
+
+width: 517.23px;
+height: 113px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+letter-spacing: -0.02em;
+
+color: #1E2124;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* divider */
+
+display: none;
+width: 517.23px;
+height: 0.99px;
+
+background: #DAE2ED;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 11.94px;
+
+position: absolute;
+width: 517.23px;
+height: 21px;
+left: calc(50% - 517.23px/2 + 0px);
+bottom: 36.8px;
+
+
+
+/* text-group */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 239.71px;
+
+width: 517.23px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 520px;
+height: 34px;
+left: calc(50% - 520px/2 + 2px);
+bottom: 33px;
+
+
+
+/* divider */
+
+width: 520px;
+height: 1px;
+
+background: #DAE2ED;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text-group */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 241px;
+
+width: 520px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 1인 NEWS */
+
+width: 80px;
+height: 21px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+
+color: #BAC5D4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
