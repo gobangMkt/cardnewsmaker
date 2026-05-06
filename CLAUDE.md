@@ -162,3 +162,32 @@ node core/extract.js core/output/{슬러그}
 https://gobang.kr/contents/7825 카드뉴스 만들어줘
 ```
 (Claude Code를 `1.인스타자동화/` 루트에서 실행)
+
+---
+
+## 드라이브 처리 명령
+
+**"드라이브 처리"** 가 입력되면 아래 파이프라인을 즉시 실행한다. 설명·확인 없이 바로 시작.
+
+### 파이프라인 순서
+
+**Step 1 — `node core/drive.js` 실행**
+- 구글 드라이브 "대기중" 폴더의 ZIP 파일 다운로드 + 이미지 추출
+- 출력에서 `DRIVE_TASK` JSON 파싱 → `url`, `slug`, `outputDir`, `imgDir`, `images` 추출
+- ZIP이 없으면 "대기중인 파일 없음" 출력 후 종료
+
+**Step 2 — 각 DRIVE_TASK마다 카드뉴스 생성**
+1. WebFetch로 `url` 콘텐츠 읽기 (원문 전체 추출)
+2. `imgDir` 안의 이미지 파일 Read로 시각 확인
+3. 슬라이드 기획 → HTML 생성 → `core/output/{slug}/slides/slide-0N.html` 저장
+   - 이미지 경로: `../img/{파일명}` (상대경로)
+   - 슬라이드 기획·작성 규칙은 위 섹션과 동일
+4. `node core/extract.js core/output/{slug}` 실행 → PNG 추출
+
+**Step 3 — `node core/drive.js` 재실행**
+- PNG 폴더 감지 → result.zip 생성 → 구글 드라이브 "완료" 폴더 업로드
+- 원본 ZIP → "대기중/작업완료" 폴더로 이동
+
+### 주의
+- DRIVE_TASK가 여러 개면 순서대로 전부 처리
+- Step 1 출력의 `===== DRIVE_TASK =====` ~ `===== /DRIVE_TASK =====` 사이 JSON이 작업 정보
