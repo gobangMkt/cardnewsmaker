@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .outer {
+    position:absolute;
+    width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:45.25px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .hl-text {
+    font-weight:800; font-size:57.61px; line-height:68.78px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED;
+    flex-shrink:0;
+  }
+  .slide-img {
+    width:934px; height:380px;
+    border-radius:27.15px;
+    object-fit:cover;
+    background:#D9D9D9;
+    flex-shrink:0;
+  }
+  .content-group {
+    display:flex; flex-direction:column; align-items:flex-start; gap:20px;
+    width:933.96px;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:18.1px;
+    width:933.96px;
+  }
+  .rank-badge {
+    min-width:81.45px; height:65.16px;
+    background:rgba(0,154,181,0.2); border-radius:18.1px;
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:0 16px;
+    font-weight:700; font-size:43.44px;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .group-title {
+    width:933.96px;
+    font-weight:700; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .body {
+    width:933.96px;
+    font-weight:400; font-size:43.44px; line-height:150%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="outer">
+    <div class="headline">
+      <div class="hl-icon">🎯</div>
+      <div class="hl-text">이런 분께 더 잘 맞아요</div>
+    </div>
+    <div class="content-divider"></div>
+    <img class="slide-img" src="../img/tech-daily-ztYmIQecyH4-unsplash.jpg" alt="">
+    <div class="content-group">
+      <div class="paragraph">
+        <div style="display:flex;align-items:center;gap:18.1px;">
+          <span class="rank-badge">✔</span>
+          <span class="group-title">5년 이상 묶어둘 여유자금이 있는 분</span>
+        </div>
+        <div class="body">단기 생활비나 전월세 보증금이 아닌, <span class="highlight">장기 투자 여유자금</span>으로 접근해야 해요.</div>
+      </div>
+      <div class="paragraph">
+        <div style="display:flex;align-items:center;gap:18.1px;">
+          <span class="rank-badge">✔</span>
+          <span class="group-title">절세 혜택을 활용할 과세 소득이 있는 분</span>
+        </div>
+        <div class="body">소득공제 효과는 <span class="highlight">과세 소득이 있을 때</span> 실질적인 절세로 이어져요.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

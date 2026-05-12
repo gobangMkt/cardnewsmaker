@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .body-text {
+    width:936.08px;
+    font-weight:400; font-size:39.61px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .data-table {
+    width:936.08px;
+    border-collapse:collapse;
+    border-radius:18.1px; overflow:hidden;
+    background:#FFFFFF;
+    border:1.79px solid #DAE2ED;
+  }
+  .data-table th, .data-table td {
+    padding:21.6px 28.91px;
+    border-bottom:1.79px solid #DAE2ED;
+    text-align:left; vertical-align:middle;
+    letter-spacing:-0.02em;
+  }
+  .data-table tr:last-child th, .data-table tr:last-child td { border-bottom:none; }
+  .data-table thead th {
+    background:#EEF2F7;
+    font-weight:700; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+  }
+  .data-table tbody th {
+    width:200px;
+    font-weight:700; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+    background:#FFFFFF;
+  }
+  .data-table tbody td {
+    font-weight:400; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+  }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">📍</div>
+      <div class="headline-text">지역마다 거래 완료 기한이 달라요</div>
+    </div>
+    <div class="content-divider"></div>
+    <p class="body-text">예외를 인정받으려면 허가 신청에 그치지 않고, 해당 지역별 기한 내에 거래를 실제로 완료해야 해요.</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>지역</th>
+          <th>거래 완료 기한</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>강남3구·용산구</th>
+          <td><span class="highlight">2026년 9월 9일</span>까지</td>
+        </tr>
+        <tr>
+          <th>서울 21개 자치구·경기 12개 지역</th>
+          <td><span class="highlight">2026년 11월 9일</span>까지</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="body-text">기한을 넘기면 예외 적용이 취소되고 중과 세율이 그대로 적용돼요. 해당 지역에 집이 있다면 기한을 꼭 달력에 표시해두세요.</p>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

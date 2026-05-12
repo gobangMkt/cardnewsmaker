@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute;
+    width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:flex-start; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .paragraph {
+    display:flex; flex-direction:column; align-items:flex-start; gap:57.92px;
+    width:936.08px;
+  }
+  .body-text {
+    width:936.08px;
+    font-weight:400; font-size:43.44px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .cell-img {
+    width:924.91px; height:423.54px;
+    border-radius:27.15px;
+    object-fit:cover;
+    background:#D9D9D9;
+    flex-shrink:0;
+  }
+  .bullets {
+    display:flex; flex-direction:column; gap:9.05px;
+    width:936.08px; padding-left:18.1px;
+  }
+  .bullet-item {
+    position:relative; padding-left:32.41px;
+    font-weight:400; font-size:39.61px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .bullet-item::before {
+    content:'•'; position:absolute;
+    left:0; top:0; font-weight:700; color:#1E2124;
+  }
+  .bullet-item b { font-weight:700; }
+  .highlight { color:#009AB5; font-weight:700; }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">🏪</div>
+      <div class="headline-text">편세권, 이제는 기본값이에요</div>
+    </div>
+    <div class="content-divider"></div>
+    <div class="paragraph">
+      <p class="body-text">편의점 4사 점포가 <span class="highlight">5만 개</span>를 넘어 도보권 편의점은 이제 기본 조건이에요.</p>
+      <img class="cell-img" src="../img/1579c051-8c42-4cba-89a7-c2821130de08.jpg" alt="">
+      <div class="bullets">
+        <div class="bullet-item"><b>무인 ATM·택배·셀프 인쇄</b> — 편의점 자체가 생활 서비스 거점으로 진화</div>
+        <div class="bullet-item">"편의점 있나요?" 대신 <b>"편의점 말고도 뭐가 있나요?"</b>를 물어야 해요</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>

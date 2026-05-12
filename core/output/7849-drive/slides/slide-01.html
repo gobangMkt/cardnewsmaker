@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  /* ===== slide-cover (596.8×746 × 1.81 = 1080×1350) ===== */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#FFFFFF;
+  }
+  .bg-img {
+    position:absolute;
+    width:1978.27px; height:1380.34px;
+    left:calc(50% - 989.135px + 69.96px); top:-30.01px;
+    object-fit:cover;
+  }
+  .gradient {
+    position:absolute; width:1080px; height:1350px; left:0; top:0;
+    background:linear-gradient(180deg, rgba(30,33,36,1) 8.3%, rgba(30,33,36,0) 65%);
+    transform:rotate(-180deg);
+  }
+  .headline {
+    position:absolute;
+    width:960.19px;
+    left:47.99px; top:870.58px;
+    display:flex; flex-direction:column; align-items:flex-start;
+    z-index:2;
+  }
+  .hl-line {
+    width:960.19px; height:135.75px;
+    font-weight:700; font-size:100.02px;
+    line-height:135%; letter-spacing:-0.05em; color:#FFFFFF;
+    -webkit-text-stroke:4px #000000; paint-order:stroke fill;
+    display:flex; align-items:center;
+  }
+  .hl-line .key { color:#00FFFF; }
+  .logo-frame {
+    position:absolute;
+    width:150px; height:44px;
+    left:calc(50% - 75px); top:1262px;
+    display:flex; align-items:center; justify-content:center;
+    z-index:3;
+  }
+  .logo-img { height:36px; width:auto; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <img class="bg-img" src="../img/de300aff-dccf-4081-ab9a-cb46c5a29c91.jpg" alt="">
+  <div class="gradient"></div>
+  <div class="headline">
+    <div class="hl-line">집 팔기 전에</div>
+    <div class="hl-line"><span class="key">세금부터 확인해요</span></div>
+  </div>
+  <div class="logo-frame">
+    <img class="logo-img" src="../피그마 ref/logo.png" alt="고방">
+  </div>
+</div>
+</body>
+</html>

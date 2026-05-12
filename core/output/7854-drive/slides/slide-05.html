@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  .canvas {
+    position:relative; width:1080px; height:1350px;
+    overflow:hidden; word-break:keep-all;
+    font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+    background:#F8FAFD;
+  }
+  .content-group {
+    position:absolute; width:936.08px; height:auto;
+    left:72.02px; top:115.22px;
+    display:flex; flex-direction:column; align-items:flex-start; gap:43.44px;
+  }
+  .headline {
+    display:flex; flex-direction:row; align-items:center; gap:14.48px;
+    width:933.96px;
+  }
+  .hl-icon {
+    width:63.35px; height:63.35px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-size:50px; line-height:1;
+  }
+  .headline-text {
+    font-weight:800; font-size:57.61px; line-height:1.2;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .content-divider {
+    width:100%; height:9.05px;
+    background:#DAE2ED; flex-shrink:0;
+  }
+  .body-text {
+    width:936.08px;
+    font-weight:400; font-size:39.61px; line-height:140%;
+    letter-spacing:-0.02em; color:#1E2124;
+  }
+  .highlight { color:#009AB5; font-weight:700; }
+  .data-table {
+    width:936.08px;
+    border-collapse:collapse;
+    border-radius:18.1px; overflow:hidden;
+    background:#FFFFFF;
+    border:1.79px solid #DAE2ED;
+  }
+  .data-table th, .data-table td {
+    padding:21.6px 28.91px;
+    border-bottom:1.79px solid #DAE2ED;
+    text-align:left; vertical-align:middle;
+    letter-spacing:-0.02em;
+  }
+  .data-table tr:last-child th, .data-table tr:last-child td { border-bottom:none; }
+  .data-table thead th {
+    background:#EEF2F7;
+    font-weight:700; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+  }
+  .data-table tbody th {
+    width:200px;
+    font-weight:700; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+    background:#FFFFFF;
+  }
+  .data-table tbody td {
+    font-weight:400; font-size:34.21px; line-height:140%;
+    color:#1E2124;
+  }
+  .section-label {
+    width:936.08px;
+    font-weight:700; font-size:39.61px; line-height:140%;
+    letter-spacing:-0.02em; color:#009AB5;
+  }
+  .footer {
+    position:absolute; width:936.08px; height:61.41px;
+    left:72.02px; bottom:66.61px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:21.61px;
+  }
+  .footer-divider { width:100%; height:1.79px; background:#DAE2ED; }
+  .footer-text {
+    width:100%;
+    display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+  }
+  .footer-label {
+    font-weight:600; font-size:32.41px; line-height:38.01px; color:#BAC5D4;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="content-group">
+    <div class="headline">
+      <div class="hl-icon">👶</div>
+      <div class="headline-text">자녀장려금도 따로 확인해봐요</div>
+    </div>
+    <div class="content-divider"></div>
+    <p class="body-text">자녀를 키우는 가구라면 근로장려금에 더해 자녀장려금도 함께 신청할 수 있어요. 소득 기준이 별도로 적용돼요.</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>조건</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>자녀 나이</th>
+          <td>18세 미만 자녀가 있어야 해요</td>
+        </tr>
+        <tr>
+          <th>소득 기준</th>
+          <td>부부합산 7,000만 원 미만</td>
+        </tr>
+        <tr>
+          <th>1명당 지원</th>
+          <td>최소 50만 원 ~ 최대 100만 원</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="body-text">자녀 수가 많을수록 받을 수 있는 금액도 늘어나요. 아이가 있다면 반드시 신청 대상 여부를 확인해봐요.</p>
+  </div>
+  <div class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-text"><span class="footer-label">시리즈픽</span></div>
+  </div>
+</div>
+</body>
+</html>
